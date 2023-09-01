@@ -1,0 +1,38 @@
+.btn-style508 {
+  position: relative;
+  border-color: rgb(0, 37, 83) !important;
+  color: rgb(251 146 60);
+  overflow: hidden;
+}
+.btn-style508::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0) rotate(50deg);
+  transform-origin: top left;
+  transition: all 0.35s;
+  background-color: rgb(251 146 60);
+  z-index: -1;
+  content: "";
+}
+.btn-style508:hover {
+  color: #fff;
+  border-color: rgb(0, 37, 83);
+}
+.btn-style508:hover::before {
+  transform: translate(0, 0);
+}
+
+.click-btn {
+  line-height: 30px;
+  /* border: 4px solid; */
+  /* border-radius: 5px; */
+  text-align: center;
+  font-size: 14px;
+  color: rgb(251 146 60);
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+}
