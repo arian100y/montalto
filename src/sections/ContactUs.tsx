@@ -56,7 +56,7 @@ function ContactUs() {
                 }}
                 className="text-gray-600 cursor-pointer"
               >
-                Calle Orquideas Nro. 444 - Dpto 701
+                Av. Javier Prado Este Nº 488 Piso 7
                 <br />
                 San Isidro, Lima – Perú​ ​
               </p>

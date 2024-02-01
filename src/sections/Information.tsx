@@ -71,7 +71,7 @@ const Information = () => {
               <br />
             </b>
             <p className="text-white">
-              Calle Orquideas Nro. 444 - Dpto 701 San Isidro Lima, Peru
+              Av. Javier Prado Este Nº 488 Piso 7 San Isidro Lima, Peru
             </p>
           </div>
           <div
