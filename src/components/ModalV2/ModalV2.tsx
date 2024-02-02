@@ -38,10 +38,16 @@ const ModalV2 = React.memo(
             if (allowOutsideClick) onClose();
           }}
         >
-          <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+          <div
+            className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 
+            text-center sm:block sm:p-0"
+          >
             <div>
               {/* inset-0 -inset-x-2 md:-inset-x-0 */}
-              <Dialog.Overlay className="fixed inset-0 -inset-x-2 bg-gray-500 bg-opacity-75 transition-opacity w-full" />
+              <Dialog.Overlay
+                className="fixed inset-0 -inset-x-2 bg-gray-500 
+                bg-opacity-75 transition-opacity w-full"
+              />
             </div>
 
             {/* This element is to trick the browser into centering the modal contents. */}
@@ -53,13 +59,17 @@ const ModalV2 = React.memo(
             </span>
 
             <div>
-              <div className="inline-block  bg-white rounded-lg px-2 md:px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-auto max-w-lg md:max-w-2xl lg:max-w-3xl sm:p-6">
+              <div
+                className="inline-block  bg-white rounded-lg px-2 md:px-4 pt-5 pb-4
+                text-left overflow-hidden shadow-xl transform transition-all sm:my-8
+                sm:align-middle w-auto max-w-lg md:max-w-2xl lg:max-w-3xl sm:p-6"
+              >
                 <div className="w-full sm:flex sm:items-start">
                   <div className="w-full mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <div className="flex flex-row justify-between">
                       <Dialog.Title
                         as="div"
-                        className="text-lg leading-6 font-semibold text-tc-blue-300 pt-2"
+                        className="text-lg leading-6 font-semibold text-customBlue pt-2"
                       >
                         {title}
                       </Dialog.Title>
@@ -67,7 +77,8 @@ const ModalV2 = React.memo(
                       <button
                         type="button"
                         ref={closeButtonRef}
-                        className="bg-transparent font-bold text-tc-gray-700 ring-transparent focus:ring-transparent focus:border-transparent rounded-none"
+                        className="bg-transparent font-bold text-customBlue ring-transparent
+                        focus:ring-transparent focus:border-transparent rounded-none"
                         onClick={() => {
                           onClose();
                         }}
@@ -87,7 +98,11 @@ const ModalV2 = React.memo(
                 >
                   <button
                     type="button"
-                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-tc-blue-300 text-base font-medium text-white hover:bg-tc-blue-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-tc-blue-300 sm:ml-3 sm:w-auto sm:text-sm"
+                    className="w-full inline-flex justify-center rounded-md border 
+                    border-transparent shadow-sm px-4 py-2 bg-customBlue text-base 
+                    font-medium text-white hover:bg-customBlue focus:outline-none 
+                    focus:ring-2 focus:ring-offset-2 focus:ring-customBlue sm:ml-3 
+                    sm:w-auto sm:text-sm"
                     onClick={() => {
                       onClose();
                     }}

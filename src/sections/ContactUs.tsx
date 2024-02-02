@@ -19,11 +19,11 @@ function ContactUs() {
     <div id="contact" className="w-full   md:pb-20">
       <div className="max-w-7xl mx-auto flex justify-center flex-col items-center space-y-20">
         <div className="flex justify-center items-center space-x-3">
-          <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
-          <p className="text-4xl lg:text-5xl family-jost text-gray-700 uppercase">
+          <div className="border-b-2 border-[orange] w-10" />
+          <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
             {language === 0 ? "Contáctanos" : "Contact Us"}
           </p>
-          <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
+          <div className="border-b-2 border-[orange] w-10" />
         </div>
 
         <div
@@ -36,14 +36,11 @@ function ContactUs() {
           flex-col-reverse lg:flex-row"
         >
           <div
-            className=" flex flex-col justify-between text-lg py-10 space-y-3 lg:space-y-0
-          text-left"
+            className="flex flex-col justify-between text-lg py-10 space-y-3 lg:space-y-0
+            text-left"
           >
             <div>
-              <div
-                style={{ color: "rgb(0,37,83)" }}
-                className="flex items-center  space-x-2"
-              >
+              <div className="flex items-center text-customBlue space-x-2">
                 <HomeSharp color={"rgb(0,37,83)"} />{" "}
                 <b>{language === 0 ? "Dirección" : "Address"}</b>
               </div>
@@ -54,7 +51,7 @@ function ContactUs() {
                     "_blank"
                   );
                 }}
-                className="text-gray-600 cursor-pointer"
+                className="text-customBlue cursor-pointer"
               >
                 Av. Javier Prado Este Nº 488 Piso 7
                 <br />
@@ -63,29 +60,26 @@ function ContactUs() {
             </div>
 
             <div>
-              <div
-                style={{ color: "rgb(0,37,83)" }}
-                className="flex items-center  space-x-2"
-              >
+              <div className="flex items-center text-customBlue space-x-2">
                 <CallSharp color={"rgb(0,37,83)"} />
                 <b>{language === 0 ? "Teléfono" : "Phone Number"}</b>
               </div>
-              <a href="tel:+5117026125" className="text-gray-600 no-underline">
+              <a
+                href="tel:+5117026125"
+                className="text-customBlue no-underline"
+              >
                 +511 -7026125​​
               </a>
             </div>
 
             <div>
-              <div
-                style={{ color: "rgb(0,37,83)" }}
-                className="flex items-center  space-x-2"
-              >
+              <div className="flex items-center text-customBlue space-x-2">
                 <MailSharp color={"rgb(0,37,83)"} />
                 <b>{language === 0 ? "Correo Electrónico" : "Email Address"}</b>
               </div>
               <a
                 href="mailto:info@montaltoasociados.com"
-                className="text-gray-600"
+                className="text-customBlue"
               >
                 Info@montaltoasociados.com​
               </a>

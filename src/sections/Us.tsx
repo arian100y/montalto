@@ -9,14 +9,14 @@ function Us() {
     <div id="us" data-aos="fade-in" className="w-full   py-20">
       <div className="flex justify-center items-center space-x-3 pb-20">
         <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
-        <p className="text-4xl lg:text-5xl family-jost text-gray-700 uppercase">
+        <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
           {language === 0 ? "Nosotros" : "Us"}
         </p>
         <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
       </div>
       <div
-        className="space-y-6 lg:space-y-0  max-w-7xl w-full flex
-       flex-col items-center lg:flex-row justify-between mx-auto lg:space-x-3 "
+        className="space-y-6 lg:space-y-0  max-w-7xl w-full flex flex-col items-center
+        lg:flex-row justify-between mx-auto lg:space-x-3 "
       >
         <div
           data-aos="fade-up"

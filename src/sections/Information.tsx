@@ -18,7 +18,7 @@ const Information = () => {
       <div className="max-w-7xl items-center text-center  mx-auto">
         <div className="flex justify-center items-center space-x-3 pb-20">
           <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
-          <p className="text-4xl lg:text-5xl family-jost text-gray-700 uppercase">
+          <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
             {language === 0 ? "Información" : "Information"}
           </p>
           <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />

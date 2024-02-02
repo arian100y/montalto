@@ -4,7 +4,7 @@ import { UserContext } from "../App";
 const Footer = () => {
   const { language } = useContext(UserContext);
   return (
-    <footer className="p-4   shadow md:px-6 md:py-8 bg-gray-900">
+    <footer className="p-4 shadow md:px-6 md:py-8 bg-customBlue">
       <div className="sm:flex sm:items-center sm:justify-between md:px-20 ">
         <a className="flex items-center sm:mb-0">
           <img
@@ -13,7 +13,7 @@ const Footer = () => {
             alt="Flowbite Logo"
           />
         </a>
-        <ul className="flex flex-wrap items-center mb-6 text-sm  sm:mb-0 text-gray-400 pl-2">
+        <ul className="flex flex-wrap items-center mb-6 text-sm sm:mb-0 text-customBlue pl-2">
           <li>
             <a href="#us" className="mr-4 hover:underline md:mr-6 ">
               {language === 0 ? "Nosotros" : "Us"}

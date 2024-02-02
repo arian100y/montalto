@@ -206,10 +206,7 @@ function Navbar() {
       style={{ zIndex: 998 }}
       className="fixed top-0 left-0 w-full bg-white shadow-sm"
     >
-      <div
-        style={{ background: "rgb(0,37,83)" }}
-        className="hidden  w-full text-xs lg:text-sm md:flex h-5 justify-between px-10 "
-      >
+      <div className="bg-customBlue hidden w-full text-xs lg:text-sm md:flex h-5 justify-between px-10 ">
         <div className="flex space-x-10">
           <a href="tel:+5117026125" className="text-white">
             +511 -7026125
@@ -232,10 +229,7 @@ function Navbar() {
           )}
         </p>
       </div>
-      <div
-        style={{ background: "rgb(0,37,83)" }}
-        className="flex  w-full text-xs lg:text-sm md:hidden h-5 justify-between px-2 "
-      >
+      <div className="bg-customBlue flex w-full text-xs lg:text-sm md:hidden h-5 justify-between px-2 ">
         <div className="flex space-x-10">
           <p className="text-white">+511 -7026125</p>
           <p className="text-white">Info@montaltoasociados.com</p>
@@ -256,7 +250,8 @@ function Navbar() {
       </div>
       <div
         style={{ background: "transparent" }}
-        className="mx-auto max-w-full 2xl:max-w-7xl lg:flex  items-center md:px-20 hidden justify-between w-full h-14  "
+        className="mx-auto max-w-full 2xl:max-w-7xl lg:flex  items-center md:px-20 hidden
+        justify-between w-full h-14"
       >
         <a href="#top" className=" flex items-center justify-center">
           <img
@@ -269,10 +264,7 @@ function Navbar() {
           {renderLinks()}
         </div>
 
-        <button
-          style={{ background: "rgb(0,37,83)" }}
-          className="hidden lg:block text-white rounded px-3 py-1 h-fit"
-        >
+        <button className="bg-customBlue hidden lg:block text-white rounded px-3 py-1 h-fit">
           Trabaja con nosotros
         </button>
       </div>

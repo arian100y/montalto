@@ -68,16 +68,16 @@ const Staff = () => {
       data-aos-duration="1100"
       data-aos-delay="0"
       data-aos-offset="400"
-      className="w-full  bg-gray-800 pb-20"
+      className="w-full bg-customBlue pb-20"
     >
       <div className="flex justify-center items-center space-x-3 py-10">
-        <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
+        <div className="border-b-2 border-[orange] w-10" />
         <p className="text-4xl lg:text-5xl family-jost text-white uppercase">
           {language === 0 ? "Perfil Profesional" : "Professional Profile"}
         </p>
-        <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
+        <div className="border-b-2 border-[orange] w-10" />
       </div>
-      <div className=" max-w-7xl flex justify-center mx-auto ">
+      <div className="max-w-7xl flex justify-center mx-auto ">
         {/* CARD  */}
         <div
           style={{ borderColor: "rgb(0,37,83)" }}
@@ -90,18 +90,19 @@ const Staff = () => {
                 setData(obj);
                 setShowModal(true);
               }}
-              className="p-4 hover:bg-gray-100 cursor-pointer flex flex-col items-center space-y-2 "
+              className="p-4 hover:bg-gray-100 cursor-pointer flex flex-col items-center
+              space-y-2"
             >
-              <b style={{ color: "rgb(0,37,83)" }} className="text-xl italic">
+              <b className="text-customBlue text-xl italic">
                 {obj.title(language)}
               </b>
-              <p className="text-xl text-gray-700">{obj.name}​</p>
+              <p className="text-xl text-customBlue">{obj.name}​</p>
               <div
                 className="w-60 h-60 border-2 border-orange-400 p-2 rounded bg-white
                 bg-top bg-no-repeat bg-cover"
                 style={{ backgroundImage: `url(${obj.imgUrl})` }}
               />
-              <div className="text-lg text-gray-700 flex space-x-2 items-center justify-center">
+              <div className="text-lg text-customBlue flex space-x-2 items-center justify-center">
                 <CallOutline />
                 <p className="m-0">{obj.phoneNumber}</p>
               </div>

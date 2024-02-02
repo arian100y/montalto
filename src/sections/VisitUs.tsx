@@ -10,13 +10,13 @@ export const VisitUs = () => {
         id="news_start"
         className="flex justify-center items-center space-x-3 pb-0"
       >
-        <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
-        <p className="text-4xl lg:text-5xl family-jost text-gray-700 uppercase">
+        <div className="border-[orange] border-b-2 w-10" />
+        <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
           {language === 0 ? "Encuéntranos" : "Visit Us"}
         </p>
-        <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
+        <div className="border-[orange] border-b-2 w-10" />
       </div>
-      <div className="  bg-gray-900">
+      <div className="bg-customBlue">
         <div className="w-full bg-white  lg:rounded-news  py-20 overflow-hidden">
           <div className="max-w-7xl mx-auto flex justify-center px-3">
             <div
@@ -35,8 +35,8 @@ export const VisitUs = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
               <div
-                style={{ background: "rgb(0,37,83)" }}
-                className="hidden lg:flex flex-col items-center absolute top-5 right-5 rounded-lg p-3 space-y-2 shadow-lg"
+                className="bg-customBlue hidden lg:flex flex-col items-center absolute
+                top-5 right-5 rounded-lg p-3 space-y-2 shadow-lg"
               >
                 <p className="text-white">
                   {language === 0

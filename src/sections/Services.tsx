@@ -188,17 +188,11 @@ function Services() {
       >
         <div className="max-w-7xl mx-auto flex-col flex justify-center items-center ">
           <div className="flex justify-center items-center space-x-3 pb-20">
-            <div
-              style={{ borderColor: "orange" }}
-              className="border-b-2  w-10"
-            />
-            <p className="text-4xl lg:text-5xl family-jost text-gray-700 uppercase">
+            <div className="border-b-2 border-[orange] w-10" />
+            <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
               {language === 0 ? "Servicios" : "Services"}
             </p>
-            <div
-              style={{ borderColor: "orange" }}
-              className="border-b-2  w-10"
-            />
+            <div className="border-b-2 border-[orange] w-10" />
           </div>
           <div
             style={{ borderColor: "rgb(0,37,83)" }}
@@ -213,11 +207,10 @@ function Services() {
                     setShowModal(true);
                   }
                 }}
-                className="text-center cursor-pointer py-2 hover:bg-orange-100  px-8 lg:px-20 border-2 border-orange-400"
+                className="text-center cursor-pointer py-2 hover:bg-orange-100 
+                px-8 lg:px-20 border-2 border-orange-400"
               >
-                <b style={{ color: "rgb(0,37,83)" }} className="text-lg">
-                  {obj.title(language)}
-                </b>
+                <b className="text-lg text-customBlue">{obj.title(language)}</b>
               </div>
             ))}
           </div>
@@ -234,7 +227,8 @@ function Services() {
                     setShowModal(true);
                   }
                 }}
-                className="text-center cursor-pointer py-2 hover:bg-orange-100  px-8 lg:px-20 border-2 border-orange-400"
+                className="text-center cursor-pointer py-2 hover:bg-orange-100 
+                px-8 lg:px-20 border-2 border-orange-400"
               >
                 <b style={{ color: "rgb(0,37,83)" }} className="text-lg">
                   {obj.title(language)}
@@ -252,7 +246,7 @@ function Services() {
         showCloseButton={false}
       >
         <div className="max-w-md p-10 text-sm">
-          <p className="font-bold text-lg mb-3">
+          <p className="font-bold text-lg mb-3 text-customBlue">
             {language === 0 ? "Detalle de servicio " : ""}{" "}
             {services[contentIdx].title(language)}{" "}
             {language === 0 ? "" : " service detail"}:{" "}
@@ -263,13 +257,13 @@ function Services() {
               services[contentIdx].main!(language)
                 .split(/\r?\n|\r|\n/g)
                 .map((text) => (
-                  <p className="text-left text-gray-600 mb-1">{text}</p>
+                  <p className="text-left text-customBlue mb-1">{text}</p>
                 ))}
           </div>
           {services[contentIdx].content!(language)
             .split(/\r?\n|\r|\n/g)
             .map((text) => (
-              <p className="text-left text-gray-600 mb-1">{text}</p>
+              <p className="text-left text-customBlue mb-1">{text}</p>
             ))}
           <button
             onClick={() => {

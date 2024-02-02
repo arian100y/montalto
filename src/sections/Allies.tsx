@@ -13,14 +13,14 @@ function Allies() {
       >
         <div className="flex justify-center items-center space-x-3 pb-20">
           <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
-          <p className="text-4xl lg:text-5xl family-jost text-gray-700 uppercase">
+          <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
             {language === 0 ? "Clientes" : "Clients"}
           </p>
           <div style={{ borderColor: "orange" }} className="border-b-2  w-10" />
         </div>
         <div
           style={{
-            borderColor: "rgb(0,37,83)",
+            borderColor: "#002553",
             borderBottomRightRadius: 60,
             borderTopLeftRadius: 60,
             boxShadow: "0 0 29px 0 rgba(68,88,144,.12)",
