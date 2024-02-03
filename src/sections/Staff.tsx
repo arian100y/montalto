@@ -114,7 +114,7 @@ const Staff = () => {
               space-y-2"
             >
               <b
-                className="text-xl mt-4 p-2  text-customBlue
+                className="text-xl mt-4 p-2 text-customBlue
               bg-customBlue lg:text-white lg:mt-0 hidden lg:block"
               >
                 {obj.title(language)}
