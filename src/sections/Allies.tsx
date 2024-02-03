@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel as CarouselReact } from "react-responsive-carousel";
+// import { Carousel as CarouselReact } from "react-responsive-carousel";
 import Carousel from "react-bootstrap/Carousel";
 import { UserContext } from "../App";
 import clients from "./ClientsImports";
@@ -8,6 +8,7 @@ import associations from "./AssociationsImports";
 
 function Allies() {
   const { language } = useContext(UserContext);
+
   return (
     <div id="allies" className="w-full py-20">
       <div className="w-full max-w-7xl flex flex-col items-center justify-center mx-auto px-2">
@@ -25,12 +26,15 @@ function Allies() {
             borderTopLeftRadius: 60,
             boxShadow: "0 0 29px 0 rgba(68,88,144,.12)",
           }}
-          className="hidden lg:block overflow-hidden shadow-sm border-2 bg-white w-full"
+          className="overflow-hidden shadow-sm border-2 bg-white lg:w-full"
         >
           <Carousel fade className="relative">
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(0, 4).map((client) => (
                     <div
                       key={client.name}
@@ -47,7 +51,7 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(4, 8).map((client) => (
                     <div
                       key={client.name}
@@ -67,8 +71,11 @@ function Allies() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(8, 12).map((client) => (
                     <div
                       key={client.name}
@@ -85,7 +92,7 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(12, 16).map((client) => (
                     <div
                       key={client.name}
@@ -105,8 +112,11 @@ function Allies() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(16, 20).map((client) => (
                     <div
                       key={client.name}
@@ -123,7 +133,7 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(20, 24).map((client) => (
                     <div
                       key={client.name}
@@ -143,8 +153,11 @@ function Allies() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(24, 28).map((client) => (
                     <div
                       key={client.name}
@@ -161,7 +174,7 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(28, 32).map((client) => (
                     <div
                       key={client.name}
@@ -181,8 +194,11 @@ function Allies() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(32, 36).map((client) => (
                     <div
                       key={client.name}
@@ -199,7 +215,7 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {clients.slice(36, 40).map((client) => (
                     <div
                       key={client.name}
@@ -220,7 +236,7 @@ function Allies() {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div
+        {/* <div
           style={{
             borderColor: "rgb(0,37,83)",
             borderBottomRightRadius: 60,
@@ -261,7 +277,7 @@ function Allies() {
               ))}
             </CarouselReact>
           </div>
-        </div>
+        </div> */}
         <div className="flex justify-center items-center space-x-3 py-20">
           <div className="border-b-2 border-[orange] w-10" />
           <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
@@ -278,12 +294,15 @@ function Allies() {
             borderTopLeftRadius: 60,
             boxShadow: "0 0 29px 0 rgba(68,88,144,.12)",
           }}
-          className="hidden lg:block overflow-hidden shadow-sm border-2 bg-white w-full"
+          className="overflow-hidden shadow-sm border-2 bg-white lg:w-full"
         >
           <Carousel fade className="relative">
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {associations.slice(0, 4).map((association) => (
                     <div
                       key={association.name}
@@ -300,7 +319,7 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {associations.slice(4, 8).map((association) => (
                     <div
                       key={association.name}
@@ -320,8 +339,11 @@ function Allies() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {associations.slice(8, 12).map((association) => (
                     <div
                       key={association.name}
@@ -338,7 +360,7 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
                   {associations.slice(12, 16).map((association) => (
                     <div
                       key={association.name}
@@ -358,9 +380,12 @@ function Allies() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="flex flex-col items-center gap-20 my-20 mx-auto">
-                <div className="flex justify-evenly w-full">
-                  {associations.slice(16, 20).map((association) => (
+              <div
+                className="flex lg:flex-col gap-7 items-center my-10 mx-5 lg:my-20
+                lg:mx-auto lg:gap-20"
+              >
+                <div className="flex flex-col gap-3 w-full lg:justify-evenly lg:flex-row lg:gap-0">
+                  {associations.slice(16, 18).map((association) => (
                     <div
                       key={association.name}
                       className="transform transition duration-500 hover:scale-125 "
@@ -376,8 +401,8 @@ function Allies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-evenly w-full">
-                  {associations.slice(20, 24).map((association) => (
+                <div className="flex flex-col gap-5 w-full lg:justify-evenly lg:flex-row lg:gap-0">
+                  {associations.slice(18, 20).map((association) => (
                     <div
                       key={association.name}
                       className="transform transition duration-500 hover:scale-125 "
@@ -397,7 +422,7 @@ function Allies() {
             </Carousel.Item>
           </Carousel>
         </div>
-        <div
+        {/* <div
           style={{
             borderColor: "rgb(0,37,83)",
             borderBottomRightRadius: 60,
@@ -438,7 +463,7 @@ function Allies() {
               ))}
             </CarouselReact>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
