@@ -10,11 +10,14 @@ function Allies() {
   const { language } = useContext(UserContext);
 
   return (
-    <div id="allies" className="w-full py-20">
-      <div className="w-full max-w-7xl flex flex-col items-center justify-center mx-auto px-2">
+    <div id="allies" className="w-full py-20 bg-customBlue">
+      <div
+        className="w-full max-w-7xl flex flex-col items-center justify-center mx-auto
+        px-2"
+      >
         <div className="flex justify-center items-center space-x-3 pb-20">
           <div className="border-b-2 border-[orange] w-10" />
-          <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
+          <p className="text-4xl lg:text-5xl family-jost text-white uppercase">
             {language === 0 ? "Clientes" : "Clients"}
           </p>
           <div className="border-b-2 border-[orange] w-10" />
@@ -280,7 +283,7 @@ function Allies() {
         </div> */}
         <div className="flex justify-center items-center space-x-3 py-20">
           <div className="border-b-2 border-[orange] w-10" />
-          <p className="text-4xl lg:text-5xl family-jost text-customBlue uppercase">
+          <p className="text-4xl lg:text-5xl family-jost text-white uppercase text-center">
             {language === 0
               ? "Asociaciones sin fines de lucro"
               : "Non-profit associations"}
