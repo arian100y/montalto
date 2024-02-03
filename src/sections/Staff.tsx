@@ -113,7 +113,10 @@ const Staff = () => {
               className="p-4 cursor-pointer flex lg:flex-col flex-col-reverse items-center
               space-y-2"
             >
-              <b className="text-xl italic mt-4 p-2 lg:mt-0 bg-white text-customBlue lg:bg-none lg:text-white">
+              <b
+                className="text-xl mt-4 p-2 bg-white text-customBlue
+                lg:bg-customBlue lg:text-white lg:mt-0"
+              >
                 {obj.title(language)}
               </b>
               {/* <p className="text-xl text-customBlue">{obj.name}​</p> */}
