@@ -53,7 +53,7 @@ function ContactUs() {
                 }}
                 className="text-customBlue cursor-pointer"
               >
-                Av. Javier Prado Este Nº 488 Piso 7
+                Av. Javier Prado Este Nº 488 Piso 9
                 <br />
                 San Isidro, Lima – Perú​ ​
               </p>
@@ -68,7 +68,7 @@ function ContactUs() {
                 href="tel:+5117026125"
                 className="text-customBlue no-underline"
               >
-                +511 -7026125​​
+                +51 1 7026125
               </a>
             </div>
 

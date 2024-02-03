@@ -162,7 +162,8 @@ We provide services of:`;
     title: (lan: any) => {
       return lan === 0 ? "Capacitaciones In-House​" : "In-house training";
     },
-    main: null,
+    main: (lan: any) =>
+      `En un mundo en constante cambio, el conocimiento es el mejor aliado para el desarrollo profesional y de los negocios. Por eso, ofrecemos capacitaciones in-house personalizadas, diseñadas con las últimas tendencias y en función de las necesidades de nuestros clientes. Así, pueden desarrollar habilidades y afrontar nuevos retos en el mercado.`,
     content: (lan: any) => `
 
 `,

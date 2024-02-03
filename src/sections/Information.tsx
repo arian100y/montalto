@@ -29,7 +29,7 @@ const Information = () => {
         >
           <div
             style={{
-              border: "6px solid rgb(0,37,83)",
+              border: "6px solid #FF8200",
               background: "rgb(0, 55, 121)",
               minHeight: 500,
               borderRadius: 45,
@@ -54,7 +54,7 @@ const Information = () => {
 
           <div
             style={{
-              border: "6px solid rgb(0,37,83)",
+              border: "6px solid #FF8200",
               background: "rgb(0, 55, 121)",
               minHeight: 500,
               borderRadius: 45,
@@ -71,12 +71,12 @@ const Information = () => {
               <br />
             </b>
             <p className="text-white">
-              Av. Javier Prado Este Nº 488 Piso 7 San Isidro Lima, Peru
+              Av. Javier Prado Este Nº 488 Piso 9 San Isidro Lima, Peru
             </p>
           </div>
           <div
             style={{
-              border: "6px solid rgb(0,37,83)",
+              border: "6px solid #FF8200",
               background: "rgb(0, 55, 121)",
               minHeight: 500,
               borderRadius: 45,
@@ -103,7 +103,7 @@ const Information = () => {
           </div>
           <div
             style={{
-              border: "6px solid rgb(0,37,83)",
+              border: "6px solid #FF8200",
               background: "rgb(0, 55, 121)",
               minHeight: 500,
               borderRadius: 45,

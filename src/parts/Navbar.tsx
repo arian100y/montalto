@@ -81,7 +81,7 @@ const links = [
         onClick: (setShowModal: any, showModal: any) => {
           setShowModal(!showModal);
         },
-        idx: null,
+        idx: 6,
       },
       {
         title: lan === 0 ? "Otros Servicios" : "Other Services",

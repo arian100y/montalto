@@ -24,7 +24,7 @@ export const VisitUs = () => {
               className="hidden md:block relative border-2 rounded-lg overflow-hidden "
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.632488838197!2d-77.03082701758622!3d-12.09191287565659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c866ba40bb4b%3A0xf2bf72e3f816930b!2sPiso%20%207%2C%20Av.%20Javier%20Prado%20Este%20488%2C%20San%20Isidro%2015046!5e0!3m2!1ses-419!2spe!4v1706825526108!5m2!1ses-419!2spe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.632488838197!2d-77.03082701758622!3d-12.09191287565659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c866ba40bb4b%3A0xf2bf72e3f816930b!2sPiso%20%209%2C%20Av.%20Javier%20Prado%20Este%20488%2C%20San%20Isidro%2015046!5e0!3m2!1ses-419!2spe!4v1706825526108!5m2!1ses-419!2spe"
                 width="600"
                 height="450"
                 title="maps"
