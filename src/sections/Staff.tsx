@@ -91,18 +91,18 @@ const Staff = () => {
       data-aos-offset="400"
       className="w-full bg-customBlue pb-20"
     >
-      {/* <div className="flex justify-center items-center space-x-3 py-10">
+      <div className="flex justify-center items-center space-x-3 py-10">
         <div className="border-b-2 border-[orange] w-10" />
         <p className="text-4xl lg:text-5xl family-jost text-white uppercase">
-          {language === 0 ? "Perfil Profesional" : "Professional Profile"}
+          {language === 0 ? "Nuestro Staff" : "Our Staff"}
         </p>
         <div className="border-b-2 border-[orange] w-10" />
-      </div> */}
+      </div>
       <div className="max-w-7xl flex justify-center mx-auto ">
         {/* CARD  */}
         <div
           className="flex flex-col lg:flex-row px-5 md:px-10 lg:px-20 py-10 rounded-xl 
-          space-y-14 lg:space-y-0 lg:space-x-14 xl:space-x-24 max-w-full"
+          space-y-7 lg:space-y-0 lg:space-x-14 xl:space-x-24 max-w-full"
         >
           {staff.map((obj) => (
             <div
@@ -110,10 +110,12 @@ const Staff = () => {
                 setData(obj);
                 setShowModal(true);
               }}
-              className="p-4 cursor-pointer flex flex-col items-center
+              className="p-4 cursor-pointer flex lg:flex-col flex-col-reverse items-center
               space-y-2"
             >
-              <b className="text-white text-xl italic">{obj.title(language)}</b>
+              <b className="text-xl italic mt-4 p-2 lg:mt-0 bg-white text-customBlue lg:bg-none lg:text-white">
+                {obj.title(language)}
+              </b>
               {/* <p className="text-xl text-customBlue">{obj.name}​</p> */}
               <div
                 className="w-60 h-72 border-4 border-white p-2 bg-orange-400
