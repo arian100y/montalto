@@ -119,7 +119,7 @@ const Information = () => {
               {language === 0 ? "Consultas en linea" : "Online advisory"}
               <br />
             </b>
-            <p className="text-white">+511 -7026125​</p>
+            <p className="text-white">+51 1 7026125​</p>
           </div>
         </div>
       </div>

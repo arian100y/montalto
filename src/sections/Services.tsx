@@ -269,11 +269,12 @@ function Services() {
           <button
             onClick={() => {
               setShowModal(false);
+              window.open("https://wa.me/c/5117026125", "_blank");
             }}
             style={{ background: "rgb(0,37,83)" }}
             className="w-full text-white rounded py-2 mt-5"
           >
-            Cerrar
+            Tienda virtual
           </button>
         </div>
       </ModalComponent>

@@ -47,7 +47,7 @@ function ContactUs() {
               <p
                 onClick={() => {
                   window.open(
-                    "https://goo.gl/maps/Jh2jd2E4NuoKRMTu9",
+                    "https://maps.app.goo.gl/Mu1vCc6GX31JRiDw9?g_st=iwb",
                     "_blank"
                   );
                 }}

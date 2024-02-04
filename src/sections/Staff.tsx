@@ -10,7 +10,7 @@ const staff = [
     },
     name: "Rossana Montalto Herrera",
     imgUrl: "https://i.ibb.co/PhKsTZL/tax.jpg",
-    phoneNumber: "+511 -7026125",
+    phoneNumber: "+51 1 7026125",
     email: "Info@montaltoasociados.com​",
     extra: (lan: any) => {
       return [
@@ -35,7 +35,7 @@ const staff = [
     },
     name: "Rossana Montalto Herrera",
     imgUrl: "https://i.ibb.co/v16xXs8/manager.jpg",
-    phoneNumber: "+511 -7026125",
+    phoneNumber: "+51 1 7026125",
     email: "Info@montaltoasociados.com​",
     extra: (lan: any) => {
       return [
@@ -60,7 +60,7 @@ const staff = [
     },
     name: "Jaime Villava Cataño",
     imgUrl: "https://i.ibb.co/47Q4Tfx/auditoria.jpg",
-    phoneNumber: "+511 -7026125",
+    phoneNumber: "+51 1 7026125",
     email: "Info@montaltoasociados.com​",
     extra: (lan: any) => {
       return [

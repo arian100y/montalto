@@ -209,7 +209,7 @@ function Navbar() {
       <div className="bg-customBlue hidden w-full text-xs lg:text-sm md:flex h-5 justify-between px-10 ">
         <div className="flex space-x-10">
           <a href="tel:+5117026125" className="text-white">
-            +511 -7026125
+            +51 1 7026125
           </a>
           <a href="mailto:info@montaltoasociados.com" className="text-white">
             Info@montaltoasociados.com
@@ -231,7 +231,7 @@ function Navbar() {
       </div>
       <div className="bg-customBlue flex w-full text-xs lg:text-sm md:hidden h-5 justify-between px-2 ">
         <div className="flex space-x-10">
-          <p className="text-white">+511 -7026125</p>
+          <p className="text-white">+51 1 7026125</p>
           <p className="text-white">Info@montaltoasociados.com</p>
         </div>
         <p
@@ -264,9 +264,10 @@ function Navbar() {
           {renderLinks()}
         </div>
 
-        <button className="bg-customBlue hidden lg:block text-white rounded px-3 py-1 h-fit">
+        {/* <button className="bg-customBlue hidden lg:block text-white rounded px-3 py-1 h-fit">
           Trabaja con nosotros
-        </button>
+        </button> */}
+        <div />
       </div>
       <div
         className="flex relative justify-between lg:hidden w-full h-14 items-center  px-10 max-w-full
