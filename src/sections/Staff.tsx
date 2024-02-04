@@ -6,32 +6,31 @@ import ModalComponent from "../components/ModalComponent/ModalComponent";
 const staff = [
   {
     title: (lan: any) => {
-      return lan === 0 ? "Manager Partner" : "Manager Partner";
+      return lan === 0
+        ? "Socia y Gerente General"
+        : "Partner and General Manager";
     },
-    name: "Rossana Montalto Herrera",
+    name: "Marysol León Huayanca",
     imgUrl: "https://i.ibb.co/PhKsTZL/tax.jpg",
     phoneNumber: "+51 1 7026125",
     email: "Info@montaltoasociados.com​",
     extra: (lan: any) => {
       return [
         lan === 0
-          ? "Contadora Pública Colegiada y Certificada, de la Universidad de Lima, con mención en Contabilidad y Auditoría. Master en Dirección y Administración de Empresas de la Universidad Peruana de Ciencias Aplicadas con la Universidad Católica de Chile.  Especialización en NIIF y NIA en el Perú y en el extranjero."
-          : "Chartered and Certified Public Accountant, from the University of Lima, with a major in Accounting and Auditing. Master in Business Management and Administration from the Peruvian University of Applied Sciences with the Catholic University of Chile. Specialization in IFRS and NIA in Peru and abroad.",
+          ? "Fundadora de Quantum Consultores, empresa especializada en auditoría y consultoría tributaria contable-financiera y laboral. Es contadora pública colegiada con grado de Magister en Tributación y Política Fiscal por la Universidad de Lima. Especialista en Tributación Internacional por la Universidad Austral de Buenos Aires. Ha seguido el curso para Propietarios de Empresas en la Universidad de Piura así como el curso de Especializado para Ejecutivos: Fundamentos de Transformación Digital en la Universidad Pacífico. Ha seguido la Especialización de Normas Internacionales de Información Financiera Completas y Pymes en Quantum Escuela de Negocios y Arista Global Group, así como el Curso Postgrado 2020, Actualización en Derecho Tributario Internacional en Maastricht University de Holanda."
+          : "Founder of Quantum Consultores, a company specialized in auditing and accounting-financial and labor tax consulting. She is a certified public accountant with a Master's degree in Taxation and Fiscal Policy from the University of Lima. She is a specialist in International Taxation from the Austral University of Buenos Aires. She has followed the course for Business Owners at the University of Piura as well as the Specialized course for Executives: Fundamentals of Digital Transformation at the Universidad Pacífico. She has followed the Specialization in Complete International Financial Reporting Standards and SMEs at Quantum Business School and Arista Global Group, as well as the 2020 Postgraduate Course, Update in International Tax Law at Maastricht University in the Netherlands.",
         lan === 0
-          ? "Experiencia por más de 30 años en auditoría financiera y consultoría de negocios. Socia de Montalto León Asociados S.C. y directora de Consultoría en Quantum Consultores. En su trayectoria profesional trabajó como directora de auditoría en otras firmas en el Perú, asesorando empresas, participando en directorios, fue gerente de auditoría en PRICEWATERHOUSE COOPERS - PWC por más 16 años. Tiene amplia trayectoria en auditorías de empresas de diversos sectores económicos y revisiones de organizaciones sin fines de lucro y cooperación técnica internacional."
-          : "Experience for more than 30 years in financial auditing and business consulting. Partner of Montalto León Asociados S.C. and Director of Consulting at Quantum Consultores. In her professional career she worked as audit director in other firms in Peru, advising companies, participating in boards of directors, she was audit manager at PRICEWATERHOUSE COOPERS-PWC for more than 16 years. She has extensive experience in audits of companies in various economic sectors and reviews of non-profit organizations and international technical cooperation.",
+          ? "Actualmente es miembro del Cómite Tributario de la Cámara de Comercio de Lima. Además, es asociada del Instituto Peruano de Investigación y Desarrollo Tributario (IPIDET) y miembro activo de la Asociación Fiscal Internacional (IFA) Grupo Peruano. Es miembro de la Comisión de Tributación y Fiscalidad de la Asociación Interamericana de Contabilidad AIC."
+          : "He is currently a member of the Tax Committee of the Lima Chamber of Commerce. She is also an associate of the Peruvian Institute for Tax Research and Development (IPIDET) and an active member of the International Tax Association (IFA) Peruvian Group. She is a member of the Taxation and Taxation Commission of the Inter-American Accounting Association AIC.",
         lan === 0
-          ? "Docente por más de 19 años de la Universidad de Lima y de la Universidad Peruana de Ciencias Aplicadas en el Pregrado y en el Postgrado, en temas relacionados con las Normas Internacionales de Información Financiera – IFRS, Auditoría, Contabilidad, Costos y Presupuestos. Expositora nacional e internacional en áreas de auditoría y aplicación de NIIF y panelista invitada."
-          : "Teacher for more than 19 years at the University of Lima and the Peruvian University of Applied Sciences at Undergraduate and Postgraduate levels, on topics related to International Financial Reporting Standards – IFRS, Auditing, Accounting, Costs and Budgets. National and international speaker in areas of auditing and application of IFRS and invited panelist.",
-        lan === 0
-          ? "Actualmente es también miembro del Comité de Auditoría de la Asociación Interamericana de Contabilidad –AIC y fundadora de Women in Accounting - WIA."
-          : "She is also currently a member of the Audit Committee of the Inter-American Accounting Association – AIC and founder of Women in Accounting – WIA.",
+          ? "En su trayectoria destaca además su posición como Vocal del Tribunal Fiscal y como DIrectora de Normas Legales y Tributarias del Colegio de Contadores Públicos de Lima (1997-1999). Autora del Libro Auditoría Tributaria Preventiva editado en el año 2018. Docente de la Universidad de Lima, Continental, ha sido docente en la UNMSM así como en la Universidad de Piura. Premiada en Turquía en noviembre de 2015 por la IWEC (The International Women's Entrepeneurial Challenge) como Mujer Empresaria jutno a 35 empresarias de todo el mundo. Nombrada como Mujer Empresaria Emprendedora en 2015 por la Cámara de Comercio de Lima."
+          : "Her career also highlights her position as Member of the Tax Court and as Director of Legal and Tax Standards of the College of Public Accountants of Lima (1997-1999). She is the author of the Preventive Tax Audit Book published in 2018. She is a Professor at the University of Lima, Continental, she has been a professor at the UNMSM as well as at the University of Piura. She was awarded in Turkey in November 2015 by the IWEC (The International Women's Entrepreneurial Challenge) as a Business Woman along with 35 businesswomen from around the world. She was named as an Entrepreneurial Businesswoman in 2015 by the Lima Chamber of Commerce.",
       ];
     },
   },
   {
     title: (lan: any) => {
-      return lan === 0 ? "Manager Partner" : "Manager Partner";
+      return lan === 0 ? "Socia y Gerente" : "Manager Partner";
     },
     name: "Rossana Montalto Herrera",
     imgUrl: "https://i.ibb.co/v16xXs8/manager.jpg",
