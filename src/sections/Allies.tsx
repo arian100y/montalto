@@ -24,12 +24,12 @@ function Allies() {
         </div>
         <div
           style={{
-            borderColor: "#002553",
+            borderColor: "orange",
             borderBottomRightRadius: 60,
             borderTopLeftRadius: 60,
             boxShadow: "0 0 29px 0 rgba(68,88,144,.12)",
           }}
-          className="overflow-hidden shadow-sm border-2 bg-white lg:w-full"
+          className="overflow-hidden shadow-sm border-4 bg-white lg:w-full"
         >
           <Carousel fade className="relative">
             <Carousel.Item>
@@ -292,12 +292,12 @@ function Allies() {
         </div>
         <div
           style={{
-            borderColor: "#002553",
+            borderColor: "orange",
             borderBottomRightRadius: 60,
             borderTopLeftRadius: 60,
             boxShadow: "0 0 29px 0 rgba(68,88,144,.12)",
           }}
-          className="overflow-hidden shadow-sm border-2 bg-white lg:w-full"
+          className="overflow-hidden shadow-sm border-4 bg-white lg:w-full"
         >
           <Carousel fade className="relative">
             <Carousel.Item>
