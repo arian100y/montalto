@@ -37,6 +37,19 @@ function App() {
       }}
     >
       <div className="App">
+        <div style={{ zIndex: 999 }} className="fixed bottom-4 right-4 ">
+          <a
+            href="https://wa.link/02xvlk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/montaltoasociados.appspot.com/o/WhatsApp_icon.png?alt=media&token=bdd9cc5a-ddeb-4ee9-8bf5-c7d1caa34504"
+              alt="WhatsApp"
+              className="w-20 h-20"
+            />
+          </a>
+        </div>
         <Navbar />
         <div id="top" className="pt-20 overflow-x-hidden">
           <Hero />
