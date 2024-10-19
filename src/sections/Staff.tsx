@@ -6,34 +6,11 @@ import ModalComponent from "../components/ModalComponent/ModalComponent";
 const staff = [
   {
     title: (lan: any) => {
-      return lan === 0
-        ? "Socia y Gerente General"
-        : "Partner and General Manager";
-    },
-    name: "Marysol León Huayanca",
-    imgUrl: "https://i.ibb.co/PhKsTZL/tax.jpg",
-    phoneNumber: "+51 1 7026125",
-    email: "Info@montaltoasociados.com​",
-    extra: (lan: any) => {
-      return [
-        lan === 0
-          ? "Fundadora de Quantum Consultores, empresa especializada en auditoría y consultoría tributaria contable-financiera y laboral. Es contadora pública colegiada con grado de Magister en Tributación y Política Fiscal por la Universidad de Lima. Especialista en Tributación Internacional por la Universidad Austral de Buenos Aires. Ha seguido el curso para Propietarios de Empresas en la Universidad de Piura así como el curso de Especializado para Ejecutivos: Fundamentos de Transformación Digital en la Universidad Pacífico. Ha seguido la Especialización de Normas Internacionales de Información Financiera Completas y Pymes en Quantum Escuela de Negocios y Arista Global Group, así como el Curso Postgrado 2020, Actualización en Derecho Tributario Internacional en Maastricht University de Holanda."
-          : "Founder of Quantum Consultores, a company specialized in auditing and accounting-financial and labor tax consulting. She is a certified public accountant with a Master's degree in Taxation and Fiscal Policy from the University of Lima. She is a specialist in International Taxation from the Austral University of Buenos Aires. She has followed the course for Business Owners at the University of Piura as well as the Specialized course for Executives: Fundamentals of Digital Transformation at the Universidad Pacífico. She has followed the Specialization in Complete International Financial Reporting Standards and SMEs at Quantum Business School and Arista Global Group, as well as the 2020 Postgraduate Course, Update in International Tax Law at Maastricht University in the Netherlands.",
-        lan === 0
-          ? "Actualmente es miembro del Cómite Tributario de la Cámara de Comercio de Lima. Además, es asociada del Instituto Peruano de Investigación y Desarrollo Tributario (IPIDET) y miembro activo de la Asociación Fiscal Internacional (IFA) Grupo Peruano. Es miembro de la Comisión de Tributación y Fiscalidad de la Asociación Interamericana de Contabilidad AIC."
-          : "He is currently a member of the Tax Committee of the Lima Chamber of Commerce. She is also an associate of the Peruvian Institute for Tax Research and Development (IPIDET) and an active member of the International Tax Association (IFA) Peruvian Group. She is a member of the Taxation and Taxation Commission of the Inter-American Accounting Association AIC.",
-        lan === 0
-          ? "En su trayectoria destaca además su posición como Vocal del Tribunal Fiscal y como DIrectora de Normas Legales y Tributarias del Colegio de Contadores Públicos de Lima (1997-1999). Autora del Libro Auditoría Tributaria Preventiva editado en el año 2018. Docente de la Universidad de Lima, Continental, ha sido docente en la UNMSM así como en la Universidad de Piura. Premiada en Turquía en noviembre de 2015 por la IWEC (The International Women's Entrepeneurial Challenge) como Mujer Empresaria jutno a 35 empresarias de todo el mundo. Nombrada como Mujer Empresaria Emprendedora en 2015 por la Cámara de Comercio de Lima."
-          : "Her career also highlights her position as Member of the Tax Court and as Director of Legal and Tax Standards of the College of Public Accountants of Lima (1997-1999). She is the author of the Preventive Tax Audit Book published in 2018. She is a Professor at the University of Lima, Continental, she has been a professor at the UNMSM as well as at the University of Piura. She was awarded in Turkey in November 2015 by the IWEC (The International Women's Entrepreneurial Challenge) as a Business Woman along with 35 businesswomen from around the world. She was named as an Entrepreneurial Businesswoman in 2015 by the Lima Chamber of Commerce.",
-      ];
-    },
-  },
-  {
-    title: (lan: any) => {
       return lan === 0 ? "Socia y Gerente" : "Manager Partner";
     },
     name: "Rossana Montalto Herrera",
-    imgUrl: "https://i.ibb.co/v16xXs8/manager.jpg",
+    imgUrl:
+      "https://firebasestorage.googleapis.com/v0/b/montaltoasociados.appspot.com/o/manager.jpeg?alt=media&token=de604346-6a76-4883-97c6-48dee77a6e4f",
     phoneNumber: "+51 1 7026125",
     email: "Info@montaltoasociados.com​",
     extra: (lan: any) => {
@@ -55,10 +32,37 @@ const staff = [
   },
   {
     title: (lan: any) => {
+      return lan === 0
+        ? "Socia y Gerente General"
+        : "Partner and General Manager";
+    },
+    name: "Marysol León Huayanca",
+    imgUrl:
+      "https://firebasestorage.googleapis.com/v0/b/montaltoasociados.appspot.com/o/tax.jpeg?alt=media&token=9acd431f-8016-47bb-b094-a350c2f5a570",
+    phoneNumber: "+51 1 7026125",
+    email: "Info@montaltoasociados.com​",
+    extra: (lan: any) => {
+      return [
+        lan === 0
+          ? "Fundadora de Quantum Consultores, empresa especializada en auditoría y consultoría tributaria contable-financiera y laboral. Es contadora pública colegiada con grado de Magister en Tributación y Política Fiscal por la Universidad de Lima. Especialista en Tributación Internacional por la Universidad Austral de Buenos Aires. Ha seguido el curso para Propietarios de Empresas en la Universidad de Piura así como el curso de Especializado para Ejecutivos: Fundamentos de Transformación Digital en la Universidad Pacífico. Ha seguido la Especialización de Normas Internacionales de Información Financiera Completas y Pymes en Quantum Escuela de Negocios y Arista Global Group, así como el Curso Postgrado 2020, Actualización en Derecho Tributario Internacional en Maastricht University de Holanda."
+          : "Founder of Quantum Consultores, a company specialized in auditing and accounting-financial and labor tax consulting. She is a certified public accountant with a Master's degree in Taxation and Fiscal Policy from the University of Lima. She is a specialist in International Taxation from the Austral University of Buenos Aires. She has followed the course for Business Owners at the University of Piura as well as the Specialized course for Executives: Fundamentals of Digital Transformation at the Universidad Pacífico. She has followed the Specialization in Complete International Financial Reporting Standards and SMEs at Quantum Business School and Arista Global Group, as well as the 2020 Postgraduate Course, Update in International Tax Law at Maastricht University in the Netherlands.",
+        lan === 0
+          ? "Actualmente es miembro del Cómite Tributario de la Cámara de Comercio de Lima. Además, es asociada del Instituto Peruano de Investigación y Desarrollo Tributario (IPIDET) y miembro activo de la Asociación Fiscal Internacional (IFA) Grupo Peruano. Es miembro de la Comisión de Tributación y Fiscalidad de la Asociación Interamericana de Contabilidad AIC."
+          : "He is currently a member of the Tax Committee of the Lima Chamber of Commerce. She is also an associate of the Peruvian Institute for Tax Research and Development (IPIDET) and an active member of the International Tax Association (IFA) Peruvian Group. She is a member of the Taxation and Taxation Commission of the Inter-American Accounting Association AIC.",
+        lan === 0
+          ? "En su trayectoria destaca además su posición como Vocal del Tribunal Fiscal y como DIrectora de Normas Legales y Tributarias del Colegio de Contadores Públicos de Lima (1997-1999). Autora del Libro Auditoría Tributaria Preventiva editado en el año 2018. Docente de la Universidad de Lima, Continental, ha sido docente en la UNMSM así como en la Universidad de Piura. Premiada en Turquía en noviembre de 2015 por la IWEC (The International Women's Entrepeneurial Challenge) como Mujer Empresaria jutno a 35 empresarias de todo el mundo. Nombrada como Mujer Empresaria Emprendedora en 2015 por la Cámara de Comercio de Lima."
+          : "Her career also highlights her position as Member of the Tax Court and as Director of Legal and Tax Standards of the College of Public Accountants of Lima (1997-1999). She is the author of the Preventive Tax Audit Book published in 2018. She is a Professor at the University of Lima, Continental, she has been a professor at the UNMSM as well as at the University of Piura. She was awarded in Turkey in November 2015 by the IWEC (The International Women's Entrepreneurial Challenge) as a Business Woman along with 35 businesswomen from around the world. She was named as an Entrepreneurial Businesswoman in 2015 by the Lima Chamber of Commerce.",
+      ];
+    },
+  },
+
+  {
+    title: (lan: any) => {
       return lan === 0 ? "Gerente de auditoría​" : "Audit Manager";
     },
     name: "Jaime Villava Cataño",
-    imgUrl: "https://i.ibb.co/47Q4Tfx/auditoria.jpg",
+    imgUrl:
+      "https://firebasestorage.googleapis.com/v0/b/montaltoasociados.appspot.com/o/auditoria.jpeg?alt=media&token=b5f8631f-1ddf-4ac2-b8d0-4406f6b30a36",
     phoneNumber: "+51 1 7026125",
     email: "Info@montaltoasociados.com​",
     extra: (lan: any) => {
@@ -72,6 +76,29 @@ const staff = [
         lan === 0
           ? "Amplia trayectoria en diversos sectores, en la agroindustria, la industria manufactura y de servicios, liderando equipos y obteniendo reconocimientos de los clientes por su trabajo y responsabilidad."
           : "Extensive experience in various sectors, in agribusiness, manufacturing and service industries, leading teams and obtaining recognition from clients for their work and responsibility.",
+      ];
+    },
+  },
+  {
+    title: (lan: any) => {
+      return lan === 0 ? "Contador público" : "Accountant";
+    },
+    name: "Luis Placido",
+    imgUrl:
+      "https://firebasestorage.googleapis.com/v0/b/montaltoasociados.appspot.com/o/Screen%20Shot%202024-02-14%20at%209.55.53%20PM.png?alt=media&token=43d72c5b-ee67-4adf-aa57-75f2b07b42ff",
+    phoneNumber: "+51 1 7026125",
+    email: "Info@montaltoasociados.com​",
+    extra: (lan: any) => {
+      return [
+        lan === 0
+          ? "Contador Público Colegiado con post-grado en la especialidad de Finanzas, especialista en las áreas de Administración y Finanzas, Tesorería y Crédito y Cobranzas en empresas nacionales y multinacionales líderes en consumo masivo en los rubros de alimentación, panificación, lácteos, eléctricos, mecánicos, entre otros. Experto como negociador con bancos, proveedores y clientes implementando políticas y procedimientos para reducir costos y gastos, obtener la liquidez necesaria y mejorar la rentabilidad de la empresa."
+          : "Certified Public Accountant with a postgraduate degree specializing in Finance, experienced in the fields of Administration, Finance, Treasury, and Credit and Collections in leading national and multinational companies in the consumer goods sectors such as food, baking, dairy, electrical, mechanical, among others. Skilled negotiator with banks, suppliers, and customers, implementing policies and procedures to reduce costs and expenses, achieve necessary liquidity, and enhance company profitability.",
+        lan === 0
+          ? "Asesor de empresas con habilidad para el análisis, resolución de problemas y toma de decisiones orientada a una gerencia por objetivos y resultados.          "
+          : "Business consultant with a strong ability for analysis, problem-solving, and decision-making oriented towards goal-oriented management and results.",
+        lan === 0
+          ? "Profesional pro-activo, con liderazgo, promotor de sinergia en equipo de trabajo y facilidad para interrelacionarse a todo nivel."
+          : "Proactive professional with leadership skills, promoting synergy within the team and adept at building relationships at all levels.",
       ];
     },
   },
@@ -97,11 +124,11 @@ const Staff = () => {
         </p>
         <div className="border-b-2 border-[orange] w-10" />
       </div>
-      <div className="max-w-7xl flex justify-center mx-auto ">
+      <div className="max-w-7xl flex justify-center mx-auto  ">
         {/* CARD  */}
         <div
-          className="flex flex-col lg:flex-row px-5 md:px-10 lg:px-20 py-10 rounded-xl 
-          space-y-7 lg:space-y-0 lg:space-x-14 xl:space-x-24 max-w-full"
+          className="flex flex-col lg:flex-row px-0 md:px-0 lg:px-0 py-10 rounded-xl 
+          space-y-7 lg:space-y-0 lg:space-x-0 xl:space-x-0 max-w-full"
         >
           {staff.map((obj) => (
             <div
@@ -151,8 +178,8 @@ const Staff = () => {
         {data !== null ? (
           <div
             style={{ maxHeight: "90vh" }}
-            className="overflow-y-scroll lg:overflow-hidden lg:h-auto w-full max-w-4xl 
-            flex flex-col-reverse lg:flex-row rounded-xl bg-customBlue"
+            className="overflow-y-scroll lg:overflow-hidden lg:h-auto w-full max-w-4xl
+            flex flex-col lg:flex-row rounded-xl bg-customBlue"
           >
             <div
               onClick={() => {
@@ -162,6 +189,29 @@ const Staff = () => {
               lg:right-2 bg-white w-7 h-7 rounded-full flex justify-center items-center"
             >
               <CloseCircleOutline color={"#00000"} height={"100%"} />
+            </div>
+            <div
+              className="flex md:hidden w-full max-w-full lg:w-1/3  flex-col justify-center
+              items-center py-7 text-white px-2 space-y-3 md:space-y-0"
+            >
+              <div
+                className="w-60 h-72 border-4 border-white p-2 bg-orange-400
+                bg-top bg-no-repeat bg-cover"
+                style={{ backgroundImage: `url(${data.imgUrl})` }}
+              />
+              <div className="text-lg text-white flex flex-col gap-2 items-center">
+                <p>{data.name}</p>
+                <div className="flex gap-2">
+                  <CallOutline color={"white"} />
+                  <p>{data.phoneNumber}</p>
+                </div>
+                <a
+                  className="text-sm underline text-white truncate"
+                  href={`mailto:${data.email}`}
+                >
+                  {data.email}
+                </a>
+              </div>
             </div>
 
             <div
@@ -181,7 +231,7 @@ const Staff = () => {
               ))}
             </div>
             <div
-              className="w-full max-w-full lg:w-1/3 flex flex-col justify-center
+              className="hidden md:flex w-full max-w-full lg:w-1/3  flex-col justify-center
               items-center py-7 text-white px-2 space-y-3 md:space-y-0"
             >
               <div

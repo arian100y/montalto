@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./ModalComponent.css";
+import { XCircleIcon } from "@heroicons/react/outline";
 
 interface Props {
   showModal: boolean;
@@ -31,7 +32,7 @@ function ModalComponent(props: Props) {
                 title="Close"
                 className="modal-close"
               >
-                Close
+                <XCircleIcon className="h-8 w-8" />
               </div>
             ) : null}
 

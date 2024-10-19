@@ -40,10 +40,10 @@
   line-height: 50px;
   font-size: 80%;
   position: absolute;
-  right: 0;
+  right: 10px;
   text-align: center;
-  top: 0;
-  width: 70px;
+  top: 10px;
+
   text-decoration: none;
 }
 .modal-close:hover {

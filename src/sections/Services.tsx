@@ -5,30 +5,30 @@ import ModalComponent from "../components/ModalComponent/ModalComponent";
 const services = [
   {
     title: (lan: any) => {
-      return lan === 0 ? "Auditoría​" : "Audit";
+      return lan === 0 ? "Auditoría externa" : "External Audit";
     },
     main: (lan: any) => {
       return lan === 0
         ? `
-Emitimos una Opinión Sobre los Estados Financieros bajo normas de contabilidad.
-Damos fé de la razonabilidad de los estados financieros teniendo en cuenta estándares internacionales de auditoría. Brindamos a los clientes la confiabilidad en la información financiera necesaria para la toma de decisiones.
- 
-Toma de Inventario de Existencias y Activo Fijo
-Conozca y obtenga el control total sobre sus bienes a través del servicio de toma de inventario, valoración y conciliación entre el conteo físico y los registros contables bajo los criterios de la Norma Internacional de Contabilidad (NIC2 y NIC16).`
+        Brindamos a los clientes la confiabilidad de su información financiera necesaria, que agregue valor al negocio para la toma de decisiones.
+
+        Emitimos una opinión sobre los estados financieros de la Compañía, evaluamos riesgos y realizamos una estrategia de trabajo para cada entorno y damos fe de la razonabilidad de los estados financieros, teniendo en cuenta los estándares internacionales de auditoría - NIAs.`
         : `We issue an Opinion on the Financial Statements under accounting standards.
   We attest to the reasonableness of the financial statements taking into account international auditing standards. We provide clients with the reliability of financial information necessary for decision making.
    
   Inventory Taking of Stocks and Fixed Assets
-  Know and obtain full control over your assets through the inventory taking, valuation and reconciliation service between the physical count and the accounting records under the criteria of the International Accounting Standard (IAS2 and IAS16).`;
+  Know and obtain full control over your assets through the inventory taking, valuation and reconciliation service between the physical count and the accounting records under the criteria of the International Accounting Standard (IAS2 and IAS16).
+  `;
     },
     content: (lan: any) => {
       return lan === 0
         ? `
-▪ Auditoría financiera
-▪ Auditoría operativa
-▪ Procedimientos previamente convenidos
-▪ Certificación de asistencia técnica
-▪ Due diligences
+        Nuestros servicios:
+        •	Auditoría de estados financieros.
+        •	Revisiones limitadas y procedimientos previamente convenidos.
+        •	Asesoramos sobre aspectos contables (USGAAP, IFRS, Consolidación).
+        •	Certificación de asistencia técnica.
+        •	Due Diligences, al realizar una compra o venta de empresa, nosotros los ayudamos a que determinen el mejor valor de la operación a través de una revisión integral de la situación financiera, contable y tributaria.
   `
         : `▪ Financial audit
   ▪ Operational audit
@@ -39,25 +39,98 @@ Conozca y obtenga el control total sobre sus bienes a través del servicio de to
   },
   {
     title: (lan: any) => {
+      return lan === 0 ? "Consultoría En NIIF​​" : "Advice On IFRS";
+    },
+    main: (lan: any) => {
+      return lan === 0
+        ? `
+        Brindamos asesoría en la implementación de las normas internacionales de información financiera – NIIF y darle continuidad a lo implementado con la asesoría en la actualización de estas.
+
+        Asesoramos en el tratamiento de operaciones complejas. Revisamos el tratamiento contable y de mejora.
+`
+        : `We have professional Accountants, Tax Agents and Lawyers to provide diagnosis, implementation and post-implementation services of IFRS. Our multidisciplinary teams include experts in IFRS, in the management of the General Business Accounting Plan (PCGE), recommendations in the proper management of accounting codes and the corresponding dynamics.
+We provide services of:`;
+    },
+    content: (lan: any) => {
+      return lan === 0
+        ? `
+        Brindamos los siguientes servicios:
+        •	Asesoría en la adopción de las NIIF.
+        •	Diagnóstico e implementación.
+        •	Actualización de normas.
+        •	Asesoría a los equipos en consultas.
+        •	Elaboración y asesoría de políticas contables.
+        •	Evaluación de moneda funcional.
+        •	Valorización de instrumentos financieros.
+      `
+        : `▪ Advice on the adoption of IFRS
+      ▪ Diagnosis and implementation of IFRS
+      ▪ Standards update
+      ▪ Personalized advice on IFRS queries
+      ▪ Development of accounting policies
+      ▪ Conversion of financial statements
+      ▪ Functional currency assessment
+      ▪ Valuation of financial instruments
+      `;
+    },
+  },
+  {
+    title: (lan: any) => {
+      return lan === 0 ? "Servicios de back office​" : "Advice On IFRS";
+    },
+    main: (lan: any) => {
+      return lan === 0
+        ? `
+        A través de nuestro servicio de back office, los líderes de las empresas se pueden centrar en su negocio. La tercerización de servicios ayuda a las empresas a ordenarse y a mejorar sus procesos para el buen desempeño organizacional.
+
+        Nuestra fortaleza es tener una visión amplia del negocio y actuar sobre todas las etapas de la cadena de valor para ordenar y lograr la máxima eficiencia en los procesos, creando una estandarización para mitigar errores y retrasos.
+        `
+        : `We have professional Accountants, Tax Agents and Lawyers to provide diagnosis, implementation and post-implementation services of IFRS. Our multidisciplinary teams include experts in IFRS, in the management of the General Business Accounting Plan (PCGE), recommendations in the proper management of accounting codes and the corresponding dynamics.
+We provide services of:`;
+    },
+    content: (lan: any) => {
+      return lan === 0
+        ? `
+        Nuestros servicios:
+        •	Gestión de contabilidad y finanzas.
+        •	Gestión de contraloría.
+        •	Gestión de recursos humanos.
+        •	Gestión de tecnologías de la información.
+        •	Gestión en transformación digital.
+      `
+        : `▪ Advice on the adoption of IFRS
+      ▪ Diagnosis and implementation of IFRS
+      ▪ Standards update
+      ▪ Personalized advice on IFRS queries
+      ▪ Development of accounting policies
+      ▪ Conversion of financial statements
+      ▪ Functional currency assessment
+      ▪ Valuation of financial instruments
+      `;
+    },
+  },
+  {
+    title: (lan: any) => {
       return lan === 0 ? "Auditoría Interna​​" : "Internal Audit";
     },
     main: (lan: any) => {
       return lan === 0
         ? `
-    Organizamos los procesos de su empresa a través de la implementación de sistemas de control interno o con la elaboración de manuales de políticas, procedimientos y funciones. La ejecucion de planes de auditoria basado en riesgos.`
+        Organizamos los procesos de su empresa a través de la implementación de sistemas de control interno o con la elaboración de manuales de políticas, procedimientos y funciones. La ejecución de planes de auditoría basada en riesgos.    `
         : `We organize the processes of your company through the implementation of internal control systems or with the elaboration of manuals of policies, procedures and functions. The execution of risk-based audit plans.`;
     },
     content: (lan: any) => {
       return lan === 0
         ? `
-    ▪ Revisión de procesos
-    ▪ Implementación del plan de auditoría interna basado en riesgos
-    ▪ Planes anuales de auditoría interna y su ejecución
-    ▪ Evaluaciones de calidad de la función de auditoría interna bajo el marco internacional para práctica profesional de auditoría interna
-    ▪ Evaluación de la gestión de riesgo de fraude
-    ▪ Implementación de la gestión de riesgos de lavado de activos y financiamiento al terrorismo
-    ▪ Continuidad de negocios
-    ▪ Seguridad de información y ciberseguridad
+        Nuestros servicios:
+        •	Revisión de procesos.
+        •	Implementación del plan de auditoría interna basado en riesgos.
+        •	Planes anuales de auditoría interna y su ejecución.
+        •	Evaluaciones de calidad de la función de auditoría interna bajo el marco internacional para práctica profesional de auditoría interna.
+        •	Evaluación de la gestión de riesgo de fraude.
+        •	Implementación de la gestión de riesgos de lavado de activos y financiamiento al terrorismo.
+        •	Continuidad de negocios.
+        •	Seguridad de la información y ciberseguridad.
     
       `
         : `▪ Review of processes
@@ -72,60 +145,51 @@ Conozca y obtenga el control total sobre sus bienes a través del servicio de to
   },
   {
     title: (lan: any) => {
-      return lan === 0 ? "Inventarios" : "Inventories";
-    },
-    main: null,
-    content: (lan: any) => `
-
-`,
-  },
-  {
-    title: (lan: any) => {
-      return lan === 0 ? "Asesoría En NIIF​​" : "Advice On IFRS";
+      return lan === 0 ? "Inventarios y tasaciones" : "Inventories";
     },
     main: (lan: any) => {
       return lan === 0
         ? `
-    Contamos con profesionales Contadores, Tributaristas y Abogados para brindar servicios de diagnóstico, implementación y post implementación de las NIIF. Nuestros equipos multidisciplinarios incluyen a expertos en NIIF, en el manejo de Plan Contable General Empresarial (PCGE), recomendaciones en el adecuado manejo de códigos contables y de la dinámica correspondiente.
-    Brindamos servicios de:
+        Los inventarios físicos son actividad clave para una adecuada gestión empresarial. Permiten verificar la existencia del activo, el mantener un control total de los mismos y en el caso de los activos fijos, comprobar el estado de conservación, su ubicación y sus condiciones de uso. También ayudan a mantener al día sus registros contables, como sustento de los saldos presentados en los estados financieros y el cumplimiento tributario.
+
+        Contamos con un equipo multidisciplinario de contadores e ingenieros tasadores, 100% capacitados y especializados que permiten adecuarnos a las normas con un trabajo de excelencia.
+        
 `
-        : `We have professional Accountants, Tax Agents and Lawyers to provide diagnosis, implementation and post-implementation services of IFRS. Our multidisciplinary teams include experts in IFRS, in the management of the General Business Accounting Plan (PCGE), recommendations in the proper management of accounting codes and the corresponding dynamics.
-We provide services of:`;
+        : `We organize the processes of your company through the implementation of internal control systems or with the elaboration of manuals of policies, procedures and functions. The execution of risk-based audit plans.`;
     },
     content: (lan: any) => {
       return lan === 0
         ? `
-    ▪ Asesoría en la adopción de las NIIF
-    ▪ Diagnóstico e implementación de NIIF
-    ▪ Actualización de normas
-    ▪ Asesoría personalizada de consultas en NIIF
-    ▪ Elaboración de políticas contables
-    ▪ Conversión de estados financieros
-    ▪ Evaluación de moneda funcional
-    ▪ Valorización de instrumentos financieros
+        Nuestros servicios de inventarios físicos incluyen:
+        •	Toma de inventarios físicos de existencias y activos fijos.
+        •	Codificación y Rotulación de activos, mediante el uso de códigos de barra.
+        •	Impresión de etiquetas y placas metálicas.
+        •	Tasaciones bajo NIIF.
+    
       `
-        : `▪ Advice on the adoption of IFRS
-      ▪ Diagnosis and implementation of IFRS
-      ▪ Standards update
-      ▪ Personalized advice on IFRS queries
-      ▪ Development of accounting policies
-      ▪ Conversion of financial statements
-      ▪ Functional currency assessment
-      ▪ Valuation of financial instruments`;
+        : ``;
     },
   },
   {
     title: (lan: any) => {
       return lan === 0 ? "Impuestos Y Legal​" : "Tax And Legal";
     },
-    main: (lan: any) => ``,
+    main: (lan: any) => {
+      return lan === 0
+        ? `
+        Evitamos contingencias tributarias y optimizamos los recursos de la Compañía con una asesoría especializada y profesional.
+    
+`
+        : `We organize the processes of your company through the implementation of internal control systems or with the elaboration of manuals of policies, procedures and functions. The execution of risk-based audit plans.`;
+    },
     content: (lan: any) => {
       return lan === 0
         ? `
-    ▪ Consultoría tributaria y legal
-    ▪ Auditoria tributaria
-    ▪ Planeamiento tributario
-    ▪ Precios de transferencia
+        Nuestros servicios:
+        •	Consultoría tributaria y legal.
+        •	Auditoría tributaria.
+        •	Planeamiento tributario.
+        •	Precios de transferencia.
       `
         : `▪ Tax and legal consultancy
       ▪ Tax audit
@@ -135,35 +199,28 @@ We provide services of:`;
   },
   {
     title: (lan: any) => {
-      return lan === 0 ? "Asesoría De Negocios​" : "Business Consulting";
+      return lan === 0
+        ? "Valorización de empresas e intangibles"
+        : "Business Consulting";
     },
-    main: (lan: any) => ``,
-    content: (lan: any) => {
+    main: (lan: any) => {
       return lan === 0
         ? `
-    ▪ Outsourcing contable
-    ▪ Outsourcing de nóminas
-    ▪ Compilacion de estados financieros
-    ▪ Revsion contable de los planes contables y las dinámicas contables
-    ▪ Estado de flujo de efectivo y presupuestos
-    ▪ Administración y tesorería
-    ▪ Cumplimiento de obligaciones tributarias
-      `
-        : `▪ Accounting outsourcing
-      ▪ Payroll outsourcing
-      ▪ Compilation of financial statements
-      ▪ Accounting review of accounting plans and accounting dynamics
-      ▪ Cash flow statement and budgets
-      ▪ Administration and treasury
-      ▪ Compliance with tax obligations`;
+        La valorización empresarial es una herramienta que ayuda a determinar el precio de transferencia de una empresa en marcha, una marca o un proyecto empresarial.
+
+        La valoración de empresas se realiza normalmente cuando una empresa quiere vender la totalidad o una parte de sus operaciones o quiere fusionarse con otra empresa o adquirirla. Contamos con especialistas en el proceso de determinar el valor actual de una empresa, utilizando medidas objetivas y evaluando todos los aspectos de la empresa.            
+`
+        : `We organize the processes of your company through the implementation of internal control systems or with the elaboration of manuals of policies, procedures and functions. The execution of risk-based audit plans.`;
     },
+    content: (lan: any) => "",
   },
   {
     title: (lan: any) => {
       return lan === 0 ? "Capacitaciones In-House​" : "In-house training";
     },
     main: (lan: any) =>
-      `En un mundo en constante cambio, el conocimiento es el mejor aliado para el desarrollo profesional y de los negocios. Por eso, ofrecemos capacitaciones in-house personalizadas, diseñadas con las últimas tendencias y en función de las necesidades de nuestros clientes. Así, pueden desarrollar habilidades y afrontar nuevos retos en el mercado.`,
+      `En un mundo en constante cambio, el conocimiento es el mejor aliado para el desarrollo profesional y de los negocios. Por eso, ofrecemos capacitaciones internas personalizadas, diseñadas con las últimas tendencias y en función de las necesidades de nuestros clientes y así pueden desarrollar habilidades y afrontar nuevos retos en el mercado.
+      `,
     content: (lan: any) => `
 
 `,
@@ -244,11 +301,11 @@ function Services() {
           setShowModal(false);
         }}
         showModal={showModal}
-        showCloseButton={false}
+        showCloseButton={true}
       >
         <div className="max-w-md p-10 text-sm">
-          <p className="font-bold text-lg mb-3 text-customBlue">
-            {language === 0 ? "Detalle de servicio " : ""}{" "}
+          <p className="font-bold text-lg md:text-base mb-3 text-customBlue">
+            {/* {language === 0 ? "Detalle de servicio " : ""}{" "} */}
             {services[contentIdx].title(language)}{" "}
             {language === 0 ? "" : " service detail"}:{" "}
           </p>

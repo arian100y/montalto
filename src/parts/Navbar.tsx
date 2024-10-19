@@ -28,10 +28,7 @@ const links = [
     },
     subLinks: (lan: any) => [
       {
-        title:
-          lan === 0
-            ? "Asesoría y Auditoría Tributaria"
-            : "Tax Advice and Audit",
+        title: lan === 0 ? "Auditoria externa" : "External audit",
         href: "#services",
         onClick: (setShowModal: any, showModal: any) => {
           setShowModal(!showModal);
@@ -39,18 +36,35 @@ const links = [
         idx: 0,
       },
       {
-        title:
-          lan === 0
-            ? "Servicios Contables Y De Planillas"
-            : "Accounting And Payroll Services",
+        title: lan === 0 ? "Consultoría en NIIF" : "NIIF consulting",
         href: "#services",
         onClick: (setShowModal: any, showModal: any) => {
           setShowModal(!showModal);
         },
-        idx: 5,
+        idx: 1,
       },
       {
-        title: lan === 0 ? "Asesoría Legal" : "Legal Advice",
+        title: lan === 0 ? "Servicios de back office" : "Back office services",
+
+        href: "#services",
+        onClick: (setShowModal: any, showModal: any) => {
+          setShowModal(!showModal);
+        },
+        idx: 2,
+      },
+      {
+        title: lan === 0 ? "Auditoría interna" : "Internal audit",
+        href: "#services",
+        onClick: (setShowModal: any, showModal: any) => {
+          setShowModal(!showModal);
+        },
+        idx: 3,
+      },
+      {
+        title:
+          lan === 0
+            ? "Inventarios y tasaciones​"
+            : "Inventories and appraisals",
 
         href: "#services",
         onClick: (setShowModal: any, showModal: any) => {
@@ -59,7 +73,7 @@ const links = [
         idx: 4,
       },
       {
-        title: lan === 0 ? "Auditoría Financiera" : "Financial Audit",
+        title: lan === 0 ? "Impuestos y legal" : "Taxes and legal",
         href: "#services",
         onClick: (setShowModal: any, showModal: any) => {
           setShowModal(!showModal);
@@ -67,16 +81,10 @@ const links = [
         idx: 5,
       },
       {
-        title: lan === 0 ? "Consultoría En NIIF​" : "NIIF Consulting",
-
-        href: "#services",
-        onClick: (setShowModal: any, showModal: any) => {
-          setShowModal(!showModal);
-        },
-        idx: 3,
-      },
-      {
-        title: lan === 0 ? "Capacitaciones" : "Training",
+        title:
+          lan === 0
+            ? "Valorización de empresas e intangibles"
+            : "Valuation of companies and intangibles",
         href: "#services",
         onClick: (setShowModal: any, showModal: any) => {
           setShowModal(!showModal);
@@ -84,12 +92,12 @@ const links = [
         idx: 6,
       },
       {
-        title: lan === 0 ? "Otros Servicios" : "Other Services",
+        title: lan === 0 ? "Capacitaciones in-house" : "In-house training",
         href: "#services",
         onClick: (setShowModal: any, showModal: any) => {
           setShowModal(!showModal);
         },
-        idx: null,
+        idx: 7,
       },
     ],
     href: "#services",
@@ -179,8 +187,8 @@ function Navbar() {
               {obj.subLinks(language).map((sub: any, idx: number) => (
                 <a
                   onClick={() => {
-                    sub.idx && sub.onClick(setShowModal, showModal);
-                    sub.idx && setContentIdx(sub.idx);
+                    sub.idx !== null && sub.onClick(setShowModal, showModal);
+                    sub.idx !== null && setContentIdx(sub.idx);
                   }}
                   href={sub.href}
                   className={`text-sm font-light text-white bg-orange-400 hover:bg-orange-500 block px-3 py-1 ${
@@ -338,7 +346,7 @@ function Navbar() {
               >
                 {language === 0 ? "Contacto" : "Contact"}
               </a>
-              <a
+              {/* <a
                 onClick={() => {
                   setShowMenu(false);
                 }}
@@ -346,7 +354,7 @@ function Navbar() {
                 className="text-gray-700 h-10 w-full border-b flex items-center justify-center cursor-pointer hover:bg-slate-100"
               >
                 {language === 0 ? "Trabaja Con Nosotros" : "Work With Us"}
-              </a>
+              </a> */}
             </div>
           </div>
         ) : null}
